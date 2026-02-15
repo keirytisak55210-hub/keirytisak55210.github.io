@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Learning Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Na7.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="logo"><i class="fas fa-calculator"></i> บทที่ 5 พีชคณิตบูลีน</div>
+    <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="Na3.html">คำอธิบายรายวิชา</a></li>
+        
+        <li class="dropdown">
+            <a href="" class="dropbtn">บทเรียน <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="Na2.html">บทที่ 1: ระบบจำนวนจริง</a>
+                <a href="Na4.html">บทที่ 2: ระบบเลขฐาน</a>
+                <a href="Na5.html">บทที่ 3: การคำนวณเลขฐาน</a>
+                <a href="Na6.html">บทที่ 4: ตรรกศาสตร์</a>
+                <a href="Na7.html">บทที่ 5: พีชคณิตบูลีน</a>
+                <a href="Na8.html">บทที่ 6: เมทริกซ์</a>
+            </div>
+        </li>
+
+        <li><a href="P1.html">เทคนิคการจำด้วยบทเพลง</a></li>
+        <li><a href="P2.html">แบบทดสอบ</a></li>
+        <li><a href="P3.html">ผู้จัดทำ</a></li>
+    </ul>
+</nav>
+
+
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>บทที่ 5 <br>
+            พีชคณิตบูลีน</h1>
+            <p>ทฤษฎี กฎพื้นฐาน และการลดรูปวงจรลอจิก</p>
+            
+        </div>
+    </header>
+
+       <section id="lesson3" class="section">
+    <div class="container">
+        <h2 class="main-title">บทเรียนที่ 5: พีชคณิตบูลีน</h2>
+
+        <div class="content-wrapper">
+    <div class="main-card-border">
+        <div class="header-section">
+            <span class="info-tag">i</span>
+            <span class="header-text">1. ความหมายและสัญลักษณ์พื้นฐาน</span>
+        </div>
+
+        <div class="body-section">
+            <p class="intro-paragraph">
+                <strong>พีชคณิตบูลลีน</strong> เป็นเทคนิคที่ใช้ในการลดรูป Switching 
+                Function เพื่อวิเคราะห์และออกแบบวงจรดิจิตอล โดยใช้ตัวแปร 2 สภาวะ คือ <strong>0 หรือ 1</strong>
+            </p>
+
+            <h3 class="title-orange">สัญลักษณ์ทางเลขคณิต (Operators)</h3>
+            
+            <div class="operator-grid">
+                <div class="op-card">
+                    <div class="op-main-symbol">.</div>
+                    <div class="op-label">AND Operation</div>
+                    <div class="op-subtext">ใช้เครื่องหมายจุด (.) แทนการคูณ</div>
+                </div>
+                <div class="op-card">
+                    <div class="op-main-symbol">+</div>
+                    <div class="op-label">OR Operation</div>
+                    <div class="op-subtext">ใช้เครื่องหมายบวก (+) แทนการบวก</div>
+                </div>
+                <div class="op-card">
+                    <div class="op-main-symbol">{A}</div>
+                    <div class="op-label">NOT Operation</div>
+                    <div class="op-subtext">ใช้เครื่องหมายบาร์ (-) หรือขีดบน</div>
+                </div>
+            </div>
+
+            <h3 class="title-orange">ตารางค่าความจริง (Truth Table)</h3>
+            <p class="table-intro">ตัวอย่างตารางค่าความจริงของฟังก์ชัน F ที่ขึ้นกับตัวแปร x, y, z</p>
+            
+            <div class="table-container-final">
+                <table class="truth-table-final">
+                    <thead>
+                        <tr>
+                            <th>x</th>
+                            <th>y</th>
+                            <th>z</th>
+                            <th class="orange-text-col">F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td>0</td><td>0</td><td class="orange-text-col">0</td></tr>
+                        <tr><td>0</td><td>0</td><td>1</td><td class="orange-text-col">1</td></tr>
+                        <tr><td>0</td><td>1</td><td>0</td><td class="orange-text-col">0</td></tr>
+                        <tr><td>0</td><td>1</td><td>1</td><td class="orange-text-col">0</td></tr>
+                        <tr><td>1</td><td>0</td><td>0</td><td class="orange-text-col">1</td></tr>
+                        <tr><td>1</td><td>0</td><td>1</td><td class="orange-text-col">1</td></tr>
+                        <tr><td>1</td><td>1</td><td>0</td><td class="orange-text-col">1</td></tr>
+                        <tr><td>1</td><td>1</td><td>1</td><td class="orange-text-col">1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+            
+
+            <div class="main-wrapper">
+    <div class="content-border-box">
+        <div class="main-header-bar">
+            <i class="fas fa-list-ul orange-icon"></i>
+            <span class="header-title">2. ทฤษฎีบทและกฎของพีชคณิตบูลลีน (Boolean Theorems)</span>
+        </div>
+
+        <div class="content-padding">
+            <p class="description-text">กฎเหล่านี้ใช้ในการลดรูปสมการให้สั้นลง เพื่อลดจำนวนเกตและลดเวลาหน่วง (Delay Time)</p>
+
+            <div class="law-grid">
+                <div class="law-card">
+                    <h4 class="law-name">1. Commutative Law (การสลับที่)</h4>
+                    <ul class="formula-items">
+                        <li>A + B = B + A</li>
+                        <li>A · B = B · A</li>
+                    </ul>
+                </div>
+
+                <div class="law-card">
+                    <h4 class="law-name">2. Associative Law (การจัดหมู่)</h4>
+                    <ul class="formula-items">
+                        <li>(A + B) + C = A + (B + C)</li>
+                        <li>(A · B) · C = A · (B · C)</li>
+                    </ul>
+                </div>
+
+                <div class="law-card">
+                    <h4 class="law-name">3. Distributive Law (การกระจาย)</h4>
+                    <ul class="formula-items">
+                        <li>A · (B + C) = (A · B) + (A · C)</li>
+                        <li>A + (B · C) = (A + B) · (A + C)</li>
+                    </ul>
+                </div>
+
+                <div class="law-card">
+                    <h4 class="law-name">4. Identity Law (เอกลักษณ์)</h4>
+                    <ul class="formula-items">
+                        <li>A + A = A</li>
+                        <li>A · A = A</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="special-section-gray">
+                <h4 class="special-title">10. De Morgan's Theorem (สำคัญมาก)</h4>
+                <div class="formula-flex-row">
+                    <div class="math-box">$$\overline{A + B} = \overline{A} \cdot \overline{B}$$</div>
+                    <div class="math-box">$$\overline{A \cdot B} = \overline{A} + \overline{B}$$</div>
+                </div>
+                <p class="bottom-note">"เปลี่ยนเครื่องหมาย แยกบาร์"</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="main-content-container">
+    <div class="styled-outer-card">
+        <div class="card-header-bar">
+            <i class="fas fa-list-ul header-icon-orange"></i>
+
+
+
+
+
+
+
+            <div class="example-section">
+                <div class="example-header">
+                    <i class="fas fa-calculator orange-icon"></i>
+                    <span>3. ตัวอย่างการลดรูป Switching Function</span>
+                </div>
+                <div class="example-card-active">
+                    <div class="example-title">ตัวอย่างที่ 3.1: $A \cdot B + \overline{A} \cdot B + \overline{A} \cdot \overline{B}$</div>
+                    <div class="solution-box">
+                        <div class="step-line">$= B \cdot (A + \overline{A}) + \overline{A} \cdot \overline{B}$ <span class="comment">(ดึงตัวร่วม B)</span></div>
+                        <div class="step-line">$= B \cdot 1 + \overline{A} \cdot \overline{B}$ <span class="comment">(กฎ Complement)</span></div>
+                        <div class="step-line">$= B + \overline{A} \cdot \overline{B}$</div>
+                        <div class="step-line-final">ตอบ: $B + \overline{A}$</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+           
+
+
+<div class="content-wrapper">
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <i class="fas fa-edit"></i> 4. แบบฝึกหัดทบทวน (Interactive Quiz)
+        </div>
+
+        <div class="quiz-body">
+            <div class="question-block">
+                <p class="question-text">1. กฎการสลับที่ (Commutative Law) ของการคูณ (AND) คือข้อใด?</p>
+                <div class="options-grid">
+                    <label class="option-item checked"><input type="radio" name="q1" checked> A + B = B + A</label>
+                    <label class="option-item"><input type="radio" name="q1"> A . B = B . A</label>
+                    <label class="option-item"><input type="radio" name="q1"> A . (B + C) = A.B + A.C</label>
+                    <label class="option-item"><input type="radio" name="q1"> A + 0 = A</label>
+                </div>
+                <div class="alert-box alert-danger">
+                    <i class="fas fa-times-circle icon-danger"></i>
+                    <div>
+                        <span class="alert-title">ยังไม่ถูกต้อง</span><br>
+                        <span class="alert-detail">คำตอบที่ถูกต้องคือ: <b>A . B = B . A</b></span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="quiz-divider">
+
+            <div class="question-block">
+                <p class="question-text">2. ตามทฤษฎีบทของ De Morgan ข้อใดถูกต้อง?</p>
+                <div class="options-grid">
+                    <label class="option-item"><input type="radio" name="q2"> (A + B)' = A' + B'</label>
+                    <label class="option-item"><input type="radio" name="q2"> (A . B)' = A' . B'</label>
+                    <label class="option-item checked"><input type="radio" name="q2" checked> (A + B)' = A' . B'</label>
+                    <label class="option-item"><input type="radio" name="q2"> A'' = A</label>
+                </div>
+                <div class="alert-box alert-success">
+                    <i class="fas fa-check-circle icon-success"></i>
+                    <div>
+                        <span class="alert-title">ถูกต้อง!</span><br>
+                        <span class="alert-detail">De Morgan ระบุว่าบาร์ของผลบวก เท่ากับ ผลคูณของบาร์แยก</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="glass-card">
+            <div class="card-header bg-red">
+                <i class="fas fa-editt"></i> 6. ศึกษาเพิ่มเติม (Further Study)
+            </div>
+            <div class="card-body">
+            <div class="btn-group">
+                <a href="https://tps.comsci.info/algebra2.pdf" class="btn-action bg-red"><i class="fas fa-file-pdf"></i> เอกสาร ประกอบ</a>
+                <a href="https://drive.google.com/file/d/1iwCOZNrvtfhxTUa1sR4sxUDEsZVD4nMr/view" class="btn-action bg-red"><i class="fas fa-file-word"></i>แบบทดสอบเพิ่มเติม</a>
+                <a href="https://ice04digital.blogspot.com/2018/04/blog-post_33.html?m=1" class="btn-action bg-dark-red"><i class="fas fa-file-video"></i>สื่อ วีดิโอ</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</section>
+    
+</body>
+</html>

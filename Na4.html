@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Learning Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Na4.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="logo"><i class="fas fa-calculator"></i> บทที่ 2 ระบบเลขฐาน</div>
+    <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="Na3.html">คำอธิบายรายวิชา</a></li>
+        
+        <li class="dropdown">
+            <a href="" class="dropbtn">บทเรียน <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="Na2.html">บทที่ 1: ระบบจำนวนจริง</a>
+                <a href="Na4.html">บทที่ 2: ระบบเลขฐาน</a>
+                <a href="Na5.html">บทที่ 3: การคำนวณเลขฐาน</a>
+                <a href="Na6.html">บทที่ 4: ตรรกศาสตร์</a>
+                <a href="Na7.html">บทที่ 5: พีชคณิตบูลีน</a>
+                <a href="Na8.html">บทที่ 6: เมทริกซ์</a>
+            </div>
+        </li>
+
+        <li><a href="P1.html">เทคนิคการจำด้วยบทเพลง</a></li>
+        <li><a href="P2.html">แบบทดสอบ</a></li>
+        <li><a href="P3.html">ผู้จัดทำ</a></li>
+    </ul>
+</nav>
+
+
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>บทที่ 2 <br>
+            ระบบเลขฐาน</h1>
+            <p>ความหมาย การเปลี่ยนฐาน และการคำนวณในระบบฐานต่างๆ</p>
+            
+        </div>
+    </header>
+
+    <section id="lesson2" class="section">
+    <div class="container">
+        <h2 class="main-title">บทเรียนที่ 2: ระบบเลขฐาน</h2>
+
+        <div class="content-wrapper">
+            <div class="glass-card">
+                <div class="card-header bg-teal">
+                    <i class="fas fa-info-circle"></i> 1. ความหมายและประเภทของเลขฐาน
+                </div>
+                <div class="card-body">
+                    <p><b>เลขฐาน (Number Base):</b> คือกลุ่มข้อมูลที่มีจำนวนหลักตามชื่อของฐานนั้นๆ เป็นสัญลักษณ์ที่แสดงถึงจำนวนต่างๆ</p>
+                    <div class="base-grid">
+                        <div class="base-item">
+                            <h5>ฐานสอง (Binary)</h5>
+                            <p>มีเลข 0, 1 (ใช้ในคอมพิวเตอร์)</p>
+                        </div>
+                        <div class="base-item">
+                            <h5>ฐานแปด (Octal)</h5>
+                            <p>มีเลข 0, 1, 2, 3, 4, 5, 6, 7</p>
+                        </div>
+                        <div class="base-item">
+                            <h5>ฐานสิบ (Decimal)</h5>
+                            <p>เลขที่เราใช้ปกติ 0-9</p>
+                        </div>
+                        <div class="base-item">
+                            <h5>ฐานสิบหก (Hex)</h5>
+                            <p>มีเลข 0-9 และ A-F</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="glass-card">
+    <div class="card-header bg-blue">
+        <i class="fas fa-table"></i> 2. ตารางเปรียบเทียบค่าเลขฐาน (0-10)
+    </div>
+    <div class="card-body">
+        <table class="modern-table centered-table">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">ฐานสิบ</th>
+                    <th style="width: 25%;">ฐานสอง</th>
+                    <th style="width: 25%;">ฐานแปด</th>
+                    <th style="width: 25%;">ฐานสิบหก</th>
+                </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>0</td><td>0000</td><td>0</td><td>0</td></tr>
+                            <tr><td>1</td><td>0001</td><td>1</td><td>1</td></tr>
+                            <tr><td>2</td><td>0010</td><td>2</td><td>2</td></tr>
+                            <tr><td>3</td><td>0011</td><td>3</td><td>3</td></tr>
+                            <tr><td>4</td><td>0100</td><td>4</td><td>4</td></tr>
+                            <tr><td>5</td><td>0101</td><td>5</td><td>5</td></tr>
+                            <tr><td>6</td><td>0110</td><td>6</td><td>6</td></tr>
+                            <tr><td>7</td><td>0111</td><td>7</td><td>7</td></tr>
+                            <tr><td>8</td><td>1000</td><td>10</td><td>8</td></tr>
+                            <tr><td>9</td><td>1001</td><td>11</td><td>9</td></tr>
+                            <tr><td>10</td><td>1010</td><td>12</td><td>A</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header bg-purple">
+                    <i class="fas fa-sync-alt"></i> 3. การเปลี่ยนฐานและค่าประจำหลัก
+                </div>
+                <div class="card-body">
+                    <div class="method-box">
+                        <h4 class="text-purple">3.1 เปลี่ยน "ฐานอื่น" เป็น "ฐานสิบ"</h4>
+                        <p>ใช้หลักการ <b>คูณเลขโดดด้วยค่าประจำหลัก</b> ($Base^n$) แล้วนำมาบวกกัน</p>
+                        <div class="formula-item" style="background: #f3e5f5;">
+                            ตัวอย่าง: $(101)_2 = (1 \times 2^2) + (0 \times 2^1) + (1 \times 2^0) = 4 + 0 + 1 = 5$
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="method-box">
+                        <h4 class="text-purple">3.2 เปลี่ยน "ฐานสิบ" เป็น "ฐานอื่น"</h4>
+                        <p>ใช้หลักการ <b>หารสั้น</b> ด้วยฐานที่ต้องการไป แล้วนำเศษมาเขียนเรียงจาก <u>ล่างขึ้นบน</u></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header bg-orange">
+                    <i class="fas fa-exchange-alt"></i> 4. การคำนวณระหว่างระบบฐานเลข
+                </div>
+                <div class="card-body">
+                    <div class="info-alert">
+                        <i class="fas fa-lightbulb"></i> <b>Trick:</b> มักนิยมแปลงเป็น "ฐานสิบ" ก่อนทำการคำนวณ แล้วจึงแปลงผลลัพธ์กลับเป็นฐานเป้าหมาย
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header bg-grey">
+                    <i class="fas fa-pencil-alt"></i> 5. แบบฝึกหัดทบทวน
+                </div>
+                <div class="card-body">
+                    <ul class="exercise-list">
+                        <li>1. $(11110)_2$ มีค่าเท่าใดในฐานสิบ?</li>
+                        <li>2. $(146)_7$ มีค่าเท่าใดในฐานสิบ?</li>
+                        <li>3. จงเปลี่ยน 34 (ฐานสิบ) ให้เป็นเลขฐาน 5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <div class="glass-card">
+        <div class="card-header bg-dark">
+            <i class="fas fa-circle-info"></i> 6. ศึกษาเพิ่มเติม (Further Study)
+        </div>
+        <div class="card-body text-center">
+            <div class="btn-group">
+                <a href="https://drive.google.com/file/d/1OM62mSQpVLc88pXXl1xCX37JTF0fWnch/view" class="btn-action bg-red"><i class="fas fa-file-pdf"></i> เอกสาร ประกอบ</a>
+                <a href="https://docs.google.com/presentation/d/1Bks52kb0clpSZdIVyc2yOzsxeb-Utfa8RucmrieLZXE/edit?slide=id.p1#slide=id.p1" class="btn-action bg-red"><i class="fas fa-file-pdf"></i>แบบทดสอบเพิ่มเติม</a>
+                <a href="https://docs.google.com/document/d/1a9OyaitWUjaT0aq-W_8rsmAt84SXNBRI8Q1GFSYukbw/edit?tab=t.0" class="btn-action bg-dark-red"><i class="fas fa-file-word"></i> สื่อ Word</a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+    
+</body>
+</html>

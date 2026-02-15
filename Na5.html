@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Learning Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Na5.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="logo"><i class="fas fa-calculator"></i> บทที่ 3 การคำนวณเลขฐาน</div>
+    <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="Na3.html">คำอธิบายรายวิชา</a></li>
+        
+        <li class="dropdown">
+            <a href="" class="dropbtn">บทเรียน <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="Na2.html">บทที่ 1: ระบบจำนวนจริง</a>
+                <a href="Na4.html">บทที่ 2: ระบบเลขฐาน</a>
+                <a href="Na5.html">บทที่ 3: การคำนวณเลขฐาน</a>
+                <a href="Na6.html">บทที่ 4: ตรรกศาสตร์</a>
+                <a href="Na7.html">บทที่ 5: พีชคณิตบูลีน</a>
+                <a href="Na8.html">บทที่ 6: เมทริกซ์</a>
+            </div>
+        </li>
+
+        <li><a href="P1.html">เทคนิคการจำด้วยบทเพลง</a></li>
+        <li><a href="P2.html">แบบทดสอบ</a></li>
+        <li><a href="P3.html">ผู้จัดทำ</a></li>
+    </ul>
+</nav>
+
+
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>บทที่ 3 <br>
+            การคำนวณเลขฐาน</h1>
+            <p>การบวก ลบ คูณ หาร และการใช้คอมพลีเมนต์ในระบบเลขฐานต่างๆ</p>
+            
+        </div>
+    </header>
+
+       <section id="lesson3" class="section">
+    <div class="container">
+        <h2 class="main-title">บทเรียนที่ 3: การคำนวณเลขฐาน</h2>
+
+        <div class="content-wrapper">
+            <div class="glass-card">
+                <div class="card-header bg-dark-blue">
+                    <i class="fas fa-calculator"></i> 1. การคำนวณเลขฐานสอง (Binary Calculation)
+                </div>
+                <div class="card-body">
+                    <div class="split-container">
+                        <div class="box light-blue-bg">
+                            <h4 class="text-blue">กฎการบวก (Addition)</h4>
+                            <ul class="math-list">
+                                <li>0 + 0 = 0</li>
+                                <li>0 + 1 = 1</li>
+                                <li>1 + 1 = 0 (ทด 1)</li>
+                                <li>1 + 1 + 1 = 1 (ทด 1)</li>
+                            </ul>
+                        </div>
+                        <div class="box light-red-bg">
+                            <h4 class="text-red">กฎการลบ (Subtraction)</h4>
+                            <ul class="math-list">
+                                <li>1 - 0 = 1</li>
+                                <li>1 - 1 = 0</li>
+                                <li>0 - 1 = 1 (ยืมหลักหน้ามา 1)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header bg-purple">
+                    <i class="fas fa-layer-group"></i> 2. & 3. ฐานแปด และ ฐานสิบหก
+                </div>
+                <div class="card-body">
+                    <div class="info-alert">
+                        <i class="fas fa-exclamation-circle"></i> <b>ข้อควรจำ:</b> 
+                        ฐานแปดห้ามเกิน 7, ฐานสิบหกใช้ A-F (A=10, B=11... F=15) <br>
+                        หากบวกแล้วเกินฐาน ให้ลบด้วยตัวฐานแล้ว <b>"ทด 1"</b> ไปหลักถัดไป
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header bg-teal">
+                    <i class="fas fa-repeat"></i> 4. คอมพลีเมนต์ (Complements)
+                </div>
+                <div class="card-body">
+                    <p>ใช้สำหรับการหาค่าลบในระบบคอมพิวเตอร์</p>
+                    <table class="modern-table centered-table">
+                        <thead>
+                            <tr>
+                                <th>ระบบ</th>
+                                <th>r-1 Complement</th>
+                                <th>r Complement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>ฐาน 2</b></td>
+                                <td>1's Comp (กลับ 0 เป็น 1)</td>
+                                <td>2's Comp (1's + 1)</td>
+                            </tr>
+                            <tr>
+                                <td><b>ฐาน 10</b></td>
+                                <td>9's Comp (9 ลบทุกหลัก)</td>
+                                <td>10's Comp (9's + 1)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header bg-grey">
+                    <i class="fas fa-edit"></i> 5. แบบฝึกหัดทบทวน
+                </div>
+                <div class="card-body">
+                    <div class="exercise-box">
+                        <p>1. $(1011)_2 + (1101)_2 = ?$</p>
+                        <p>2. $(1100)_2 - (1010)_2 = ?$</p>
+                        <p>3. จงหา 2's Complement ของ $(10110)_2$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="glass-card">
+            <div class="card-header bg-red">
+                <i class="fas fa-editt"></i> 6. ศึกษาเพิ่มเติม (Further Study)
+            </div>
+            <div class="card-body">
+            <div class="btn-group">
+                <a href="https://drive.google.com/file/d/1K21gsfE5N5LPUVQyAej5l-__W_0AaNNL/view" class="btn-action bg-red"><i class="fas fa-file-pdf"></i> เอกสาร ประกอบ</a>
+                <a href="https://drive.google.com/file/d/13LR_6-pSKxLk8e4KsDRV7OMzb7VMuhbi/view" class="btn-action bg-red"><i class="fas fa-file-word"></i>แบบทดสอบเพิ่มเติม</a>
+                <a href="https://www.youtube.com/watch?app=desktop&v=ExCs0hhs9C8&t=0s" class="btn-action bg-dark-red"><i class="fas fa-file-video"></i>สื่อ วีดิโอ</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</section>
+    
+</body>
+</html>

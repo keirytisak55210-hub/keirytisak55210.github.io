@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Learning Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Na8.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="logo"><i class="fas fa-calculator"></i> บทที่ 6 เมทริกซ์</div>
+    <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="Na3.html">คำอธิบายรายวิชา</a></li>
+        
+        <li class="dropdown">
+            <a href="" class="dropbtn">บทเรียน <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="Na2.html">บทที่ 1: ระบบจำนวนจริง</a>
+                <a href="Na4.html">บทที่ 2: ระบบเลขฐาน</a>
+                <a href="Na5.html">บทที่ 3: การคำนวณเลขฐาน</a>
+                <a href="Na6.html">บทที่ 4: ตรรกศาสตร์</a>
+                <a href="Na7.html">บทที่ 5: พีชคณิตบูลีน</a>
+                <a href="Na8.html">บทที่ 6: เมทริกซ์</a>
+            </div>
+        </li>
+
+        <li><a href="P1.html">เทคนิคการจำด้วยบทเพลง</a></li>
+        <li><a href="P2.html">แบบทดสอบ</a></li>
+        <li><a href="P3.html">ผู้จัดทำ</a></li>
+    </ul>
+</nav>
+
+
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>บทที่ 6 <br>
+            เมทริกซ์</h1>
+            
+            <p>ความหมาย การดำเนินการ ดีเทอร์มิแนนต์ และอินเวอร์ส</p>
+            
+        </div>
+    </header>
+
+       <section id="lesson-matrix" class="section">
+     <div class="container">
+        <h2 class="main-title">บทเรียนที่ 6: มทริกซ์</h2>
+
+        
+       <section id="lesson-matrix" class="section">
+    <div class="container-fixed">
+        
+        <div class="card-standard info-theme">
+            <div class="card-header">
+                <i class="fas fa-info-circle"></i> 1. ความหมายและลักษณะของเมทริกซ์
+            </div>
+            <div class="card-content">
+                <p class="description"><strong>เมทริกซ์ (Matrix)</strong> คือ กลุ่มของตัวเลขที่เรียงกันเป็นรูปสี่เหลี่ยมภายในเครื่องหมายวงเล็บ [ ] หรือ ( )</p>
+                <div class="matrix-info-grid">
+                    <div class="matrix-preview">
+                        <p class="label">ตัวอย่างเมทริกซ์ A</p>
+                        <div class="matrix-box">
+                            ตัวอย่างเมทริกซ์ A <br>
+                    2	0 <br>
+                    1	3
+
+                        </div>
+                    </div>
+                    <ul class="info-list">
+                        <li><strong>สมาชิก (Element):</strong> ตัวเลขแต่ละตัวในเมทริกซ์</li>
+                        <li><strong>แถว (Row):</strong> การเรียงในแนวนอน</li>
+                        <li><strong>หลัก (Column):</strong> การเรียงในแนวตั้ง</li>
+                        <li><strong>มิติ (Dimension):</strong> บอกขนาดเป็น m × n (จำนวนแถว × จำนวนหลัก)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-standard action-theme">
+            <div class="card-header">
+                <i class="fas fa-calculator"></i> 2. การบวก ลบ และคูณเมทริกซ์
+            </div>
+            <div class="card-content-no-pad">
+                <div class="accordion-bar">
+                    <span>2.1 การบวกและการลบ (Addition & Subtraction)</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-bar">
+                    <span>2.2 การคูณเมทริกซ์ (Multiplication)</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-standard det-theme">
+            <div class="card-header">
+                <i class="fas fa-italic"></i> 3. ดีเทอร์มิแนนต์และอินเวอร์ส (Det & Inverse)
+            </div>
+            <div class="card-content">
+                <div class="setup-text">กำหนดเมทริกซ์ $A = a	b
+                                                                c	d
+</div>
+                <div class="formula-grid">
+                    <div class="formula-card">
+                        <h5>ดีเทอร์มิแนนต์ (Determinant)</h5>
+                        <div class="main-formula">det(A) = ad - bc</div>
+                        <p class="hint">(คูณลง - คูณขึ้น)</p>
+                    </div>
+                    <div class="formula-card">
+                        <h5>อินเวอร์สการคูณ ($A^{-1}$)</h5>
+                        <div class="main-formula">1
+det(A)
+d	-b
+-c	a
+</div>
+                        <p class="condition">เงื่อนไข: det(A) ≠ 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<div class="quiz-outer-box-teal">
+    <div class="quiz-teal-header">
+        <i class="fas fa-edit"></i> 4. แบบฝึกหัดทบทวน (Exercises)
+    </div>
+    <div class="quiz-padding">
+        <div class="exercise-setup">
+            A = 
+1	2
+2	7
+B = 
+3	5
+6	-2
+C = 
+3	-8
+4	1
+
+        </div>
+
+        <div class="question-list">
+            <div class="q-item">
+                <span><strong>ข้อที่ 1:</strong> จงหาค่าของ A + B</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="q-item">
+                <span><strong>ข้อที่ 2:</strong> จงหาค่าของ B - A</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="q-item">
+                <span><strong>ข้อที่ 3:</strong> จงหาค่าของ (A + B) + C</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+        <div class="glass-card">
+            <div class="card-header bg-red">
+                <i class="fas fa-editt"></i> 6. ศึกษาเพิ่มเติม (Further Study)
+            </div>
+            <div class="card-body">
+            <div class="btn-group">
+                <a href="https://drive.google.com/file/d/1v7LrbT3EnJgUbZW6AGRiNkdR1GSc7gnQ/view" class="btn-action bg-red"><i class="fas fa-file-pdf"></i> เอกสาร ประกอบ</a>
+                <a href="https://drive.google.com/file/d/1BwibyjQL5kVlO0OAFuRwI_6SFnkaKHPE/view" class="btn-action bg-red"><i class="fas fa-file-word"></i>แบบทดสอบเพิ่มเติม</a>
+                <a href="https://www.youtube.com/watch?v=73qjO8dZqF8&authuser=0" class="btn-action bg-dark-red"><i class="fas fa-file-video"></i>สื่อ วีดิโอ</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</section>
+    
+</body>
+</html>

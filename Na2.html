@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Learning Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Na2.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="logo"><i class="fas fa-calculator"></i> บทที่ 1 ระบบจำนวนจริง</div>
+    <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="Na3.html">คำอธิบายรายวิชา</a></li>
+        
+        <li class="dropdown">
+            <a href="" class="dropbtn">บทเรียน <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="Na2.html">บทที่ 1: ระบบจำนวนจริง</a>
+                <a href="Na4.html">บทที่ 2: ระบบเลขฐาน</a>
+                <a href="Na5.html">บทที่ 3: การคำนวณเลขฐาน</a>
+                <a href="Na6.html">บทที่ 4: ตรรกศาสตร์</a>
+                <a href="Na7.html">บทที่ 5: พีชคณิตบูลีน</a>
+                <a href="Na8.html">บทที่ 6: เมทริกซ์</a>
+            </div>
+        </li>
+
+        <li><a href="P1.html">เทคนิคการจำด้วยบทเพลง</a></li>
+        <li><a href="P2.html">แบบทดสอบ</a></li>
+        <li><a href="P3.html">ผู้จัดทำ</a></li>
+    </ul>
+</nav>
+
+
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>บทที่ 1 <br>
+            ระบบจำนวนจริง</h1>
+            <p>สรุปเนื้อหา สมบัติ การแยกตัวประกอบ และการแก้สมการ-อสมการ</p>
+            
+        </div>
+    </header>
+
+    <section id="lesson1" class="section">
+    <div class="container">
+        <h2 class="main-title">บทเรียนที่ 1: ระบบจำนวนจริง</h2>
+
+        <div class="content-wrapper">
+            <div class="glass-card">
+                <div class="card-header bg-blue">
+                    <i class="fas fa-layer-group"></i> 1. ชนิดของจำนวนต่างๆ (Types of Numbers)
+                </div>
+                <div class="card-body">
+                    <p class="summary-text"><b>จำนวนจริง (R):</b> คือจำนวนที่มีอยู่จริงบนเส้นจำนวน ประกอบด้วย:</p>
+                    
+                    <div class="split-container">
+                        <div class="box rational">
+                            <h4>จำนวนตรรกยะ (Q)</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> จำนวนเต็ม (I)</li>
+                                <li><i class="fas fa-check"></i> เศษส่วน a/b</li>
+                                <li><i class="fas fa-check"></i> ทศนิยมซ้ำ</li>
+                            </ul>
+                        </div>
+                        <div class="box irrational">
+                            <h4>จำนวนอกรรกยะ (Q')</h4>
+                            <ul>
+                                <li><i class="fas fa-times"></i> ทศนิยมไม่ซ้ำ</li>
+                                <li><i class="fas fa-times"></i> ถอดรากไม่ลงตัว</li>
+                                <li><i class="fas fa-times"></i> ค่า $\pi, e$</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header bg-green">
+                    <i class="fas fa-equals"></i> 2. สมบัติการเท่ากันของจำนวนจริง
+                </div>
+                <div class="card-body">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>ชื่อสมบัติ</th>
+                                <th>นิยาม / ตัวอย่าง</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>สมบัติการสะท้อน</td><td>a = a</td></tr>
+                            <tr><td>สมบัติการสมมาตร</td><td>ถ้า a = b แล้ว b = a</td></tr>
+                            <tr><td>สมบัติการถ่ายทอด</td><td>ถ้า a = b และ b = c แล้ว a = c</td></tr>
+                            <tr><td>การบวกด้วยตัวเท่ากัน</td><td>ถ้า a = b แล้ว a + c = b + c</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+    <div class="glass-card">
+        <div class="card-header bg-purple">
+            <i class="fas fa-plus-minus"></i> 3. สมบัติการบวกและการคูณ
+        </div>
+        <div class="card-body">
+            <div class="split-container">
+                <div class="box">
+                    <h4 class="text-purple">สมบัติการบวก</h4>
+                    <ul>
+                        <li><i class="fas fa-circle-dot"></i> <b>เอกลักษณ์:</b> คือ 0 (0 + a = a)</li>
+                        <li><i class="fas fa-circle-dot"></i> <b>อินเวอร์ส:</b> ของ a คือ -a</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h4 class="text-purple">สมบัติการคูณ</h4>
+                    <ul>
+                        <li><i class="fas fa-circle-dot"></i> <b>เอกลักษณ์:</b> คือ 1 (1 x a = a)</li>
+                        <li><i class="fas fa-circle-dot"></i> <b>อินเวอร์ส:</b> คือ 1/a (a ≠ 0)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <div class="card-header bg-orange">
+            <i class="fas fa-square-root-variable"></i> 4. การแยกตัวประกอบพหุนาม
+        </div>
+        <div class="card-body">
+            <div class="formula-grid">
+                <div class="formula-item">a² - b² = (a - b)(a + b)</div>
+                <div class="formula-item">(a ± b)² = a² ± 2ab + b²</div>
+                <div class="formula-item">a³ - b³ = (a - b)(a² + ab + b²)</div>
+                <div class="formula-item">a³ + b³ = (a + b)(a² - ab + b²)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <div class="card-header bg-red">
+            <i class="fas fa-calculator"></i> 5. การแก้สมการและอสมการ
+        </div>
+        <div class="card-body">
+            <p>สูตรการแก้สมการกำลังสอง:</p>
+            <div class="math-highlight">
+                x = [ -b ± √(b² - 4ac) ] / 2a
+            </div>
+            <div class="info-alert">
+                <i class="fas fa-exclamation-triangle"></i> คูณ/หารด้วยเลขลบ ต้องกลับเครื่องหมายอสมการ
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <div class="card-header bg-teal">
+            <i class="fas fa-ruler-horizontal"></i> 6. ค่าสัมบูรณ์ (Absolute Value)
+        </div>
+        <div class="card-body">
+            <div class="abs-grid">
+                <div class="abs-item green"><b>|x| < a</b><br> -a < x < a</div>
+
+                <div class="abs-item red"><b>|x| > a</b><br> x > a หรือ x < -a</div>
+                
+                <div class="abs-item green"><b>|a| = |b|</b><br> a² = b²</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <div class="card-header bg-dark-blue">
+            <i class="fas fa-monument"></i> 7. พื้นฐานระบบเลขโรมัน
+        </div>
+        <div class="card-body">
+            <table class="modern-table">
+                <tr style="background: #f8fafc;">
+                    <th>โรมัน</th><td>I</td><td>V</td><td>X</td><td>L</td><td>C</td><td>D</td><td>M</td>
+                </tr>
+                <tr>
+                    <th>อารบิก</th><td>1</td><td>5</td><td>10</td><td>50</td><td>100</td><td>500</td><td>1000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <div class="card-header bg-grey">
+            <i class="fas fa-pen-to-square"></i> 8. แบบฝึกหัดทบทวน (Exercises)
+        </div>
+        <div class="card-body">
+            <div class="split-container">
+                <div class="box">
+                    <p>1. เปลี่ยน 238 เป็นเลขโรมัน</p>
+                    <p>2. เปลี่ยน 953 เป็นเลขโรมัน</p>
+                </div>
+                <div class="box">
+                    <p>3. เปลี่ยน MMDXLVII เป็นอารบิก</p>
+                    <p>4. เปลี่ยน VMDXCIX เป็นอารบิก</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <div class="card-header bg-dark">
+            <i class="fas fa-circle-info"></i> 9. ศึกษาเพิ่มเติม (Further Study)
+        </div>
+        <div class="card-body text-center">
+            <div class="btn-group">
+                <a href="https://drive.google.com/file/d/18Iaog0NJO28kK6zp9pKkVIZxVBZjfPaR/view" class="btn-action bg-red"><i class="fas fa-file-pdf"></i> เอกสาร (จำนวนจริง)</a>
+                <a href="https://drive.google.com/file/d/1EXuWnKEHDUhTBK0J2lSsD96c0mhDwfV4/view" class="btn-action bg-red"><i class="fas fa-file-pdf"></i> เอกสาร (เลขโรมัน)</a>
+                <a href="https://drive.google.com/file/d/16nzE4JgZhvVK7toUcn7icmWoVCuHZt-d/view" class="btn-action bg-red"><i class="fas fa-file-pdf"></i>แบบทดสอบเพิ่มเติม</a>
+                <a href="https://www.twinkl.co.th/teaching-wiki/lekh-roman-roman-numerals" class="btn-action bg-dark-red"><i class="fas fa-video"></i> คลิปวิดีโอสอน - สื่อ</a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+    
+</body>
+</html>

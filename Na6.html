@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Learning Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Na6.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="logo"><i class="fas fa-calculator"></i> บทที่ 4 ตรรกศาสตร์ </div>
+    <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="Na3.html">คำอธิบายรายวิชา</a></li>
+        
+        <li class="dropdown">
+            <a href="" class="dropbtn">บทเรียน <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="Na2.html">บทที่ 1: ระบบจำนวนจริง</a>
+                <a href="Na4.html">บทที่ 2: ระบบเลขฐาน</a>
+                <a href="Na5.html">บทที่ 3: การคำนวณเลขฐาน</a>
+                <a href="Na6.html">บทที่ 4: ตรรกศาสตร์</a>
+                <a href="Na7.html">บทที่ 5: พีชคณิตบูลีน</a>
+                <a href="Na8.html">บทที่ 6: เมทริกซ์</a>
+            </div>
+        </li>
+
+        <li><a href="P1.html">เทคนิคการจำด้วยบทเพลง</a></li>
+        <li><a href="P2.html">แบบทดสอบ</a></li>
+        <li><a href="P3.html">ผู้จัดทำ</a></li>
+    </ul>
+</nav>
+
+
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>บทที่ 4  <br>
+            ตรรกศาสตร์</h1>
+            <p>การให้เหตุผล ค่าความจริง สัจนิรันดร์ และตัวบ่งปริมาณ</p>
+            
+        </div>
+    </header>
+
+
+
+
+       <section id="lesson3" class="section">
+    <div class="container">
+        <h2 class="main-title">บทเรียนที่ 4: ตรรกศาสตร์</h2>
+
+        <div class="content-wrapper">
+            <div class="glass-card">
+                <div class="card-header bg-dark-blue">
+                    <i class="fas fa-calculator"></i> 1. พื้นฐานตรรกศาสตร์และประพจน์
+                </div>
+                <div class="card-body">
+                    <div class="note-box" style="border-left-color: #3b82f6; margin-bottom: 20px;">
+                        <strong>โครงสร้างระบบคณิตศาสตร์:</strong><br>
+                        คำอนิยาม → บทนิยาม → สัจพจน์ → ทฤษฎีบท
+                    </div>
+                    <div style="background: #e3f2fd; padding: 20px; border-radius: 12px;">
+                        <p><b>ประพจน์ (Proposition):</b> คือ ประโยคบอกเล่าหรือปฏิเสธที่มีค่าความจริงเป็น จริง (T) หรือ เท็จ (F) อย่างใดอย่างหนึ่งเท่านั้น</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header bg-purple">
+                    <i class="fas fa-layer-group"></i> 2. การแยกตัวประกอบพหุนาม
+                </div>
+                <div class="card-body">
+                    <div class="formula-grid">
+                        <div class="formula-card">
+                            <span class="formula-label">ผลต่างกำลังสอง</span>
+                            <div class="formula-text">$x^2 - y^2 = (x - y)(x + y)$</div>
+                        </div>
+                        <div class="formula-card">
+                            <span class="formula-label">กำลังสองสมบูรณ์</span>
+                            <div class="formula-text">$(x \pm y)^2 = x^2 \pm 2xy + y^2$</div>
+                        </div>
+                        <div class="formula-card">
+                            <span class="formula-label">ผลต่างกำลังสาม</span>
+                            <div class="formula-text">$x^3 - y^3 = (x - y)(x^2 + xy + y^2)$</div>
+                        </div>
+                        <div class="formula-card">
+                            <span class="formula-label">ผลบวกกำลังสาม</span>
+                            <div class="formula-text">$x^3 + y^3 = (x + y)(x^2 - xy + y^2)$</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header bg-purple" style="background: rgb(253, 1, 240); color: #ffffff; border-bottom: 1px solid #eee;">
+                    <i class="fas fa-table" style="color: #ffffff;"></i> 3. ตัวเชื่อมประพจน์และค่าความจริง
+                </div>
+                <div class="card-body">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>p</th>
+                                    <th>q</th>
+                                    <th class="col-and">และ ($\wedge$)</th>
+                                    <th class="col-or">หรือ ($\vee$)</th>
+                                    <th class="col-if">ถ้า..แล้ว ($\rightarrow$)</th>
+                                    <th class="col-iff">ก็ต่อเมื่อ ($\leftrightarrow$)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="circle true">T</span></td>
+                                    <td><span class="circle true">T</span></td>
+                                    <td>T</td><td>T</td><td>T</td><td>T</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="circle true">T</span></td>
+                                    <td><span class="circle false">F</span></td>
+                                    <td>F</td><td>T</td><td class="highlight-false">F</td><td>F</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="circle false">F</span></td>
+                                    <td><span class="circle true">T</span></td>
+                                    <td>F</td><td>T</td><td>T</td><td>F</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="circle false">F</span></td>
+                                    <td><span class="circle false">F</span></td>
+                                    <td>F</td><td>F</td><td>T</td><td>T</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="footer-notes">
+                        <div class="note-box">
+                            <strong>ข้อสังเกตสำคัญ:</strong>
+                            <ul style="font-size: 0.9rem; padding-left: 15px;">
+                                <li>และ: จริงเมื่อ $T \wedge T$ เท่านั้น</li>
+                                <li>หรือ: เท็จเมื่อ $F \vee F$ เท่านั้น</li>
+                                <li>ถ้า..แล้ว: เท็จเมื่อ $T \rightarrow F$ เท่านั้น</li>
+                            </ul>
+                        </div>
+                        <div class="note-box">
+                            <strong>นิเสธ (~):</strong>
+                            <p>กลับค่าเป็นตรงข้าม เช่น $\sim T \equiv F$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+        <div class="glass-card">
+            <div class="card-header bg-red">
+                <i class="fas fa-editt"></i> 4.  ศึกษาเพิ่มเติม (Further Study)
+            </div>
+            <div class="card-body">
+            <div class="btn-group">
+                <a href="https://drive.google.com/file/d/1k8x2cs-XuoiHuhu29uzry3qLsrqxl6lt/view" class="btn-action bg-red"><i class="fas fa-file-pdf"></i> เอกสาร ประกอบ</a>
+                <a href="https://drive.google.com/file/d/1SIQNWnrqZi3Sv7p_ne-z7VGwGDLLNcyU/view" class="btn-action bg-red"><i class="fas fa-file-pdf"></i>แบบหาเพิ่มเติม</a>
+                <a href="https://www.ondemand.in.th/%E0%B8%95%E0%B8%A3%E0%B8%A3%E0%B8%81%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C-mathemetical-logic/" class="btn-action bg-dark-red"><i class="fas fa-file-"></i>ข้อมูลเพิ่มเติม</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</section>
+    
+</body>
+</html>
